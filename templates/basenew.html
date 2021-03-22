@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chuluun Advocates</title>
+    <!-- FAVICON LINK -->
+		<link rel="shortcut icon" href="{% static 'images/favicon.ico'%}" type="image/x-icon">
+		<!-- STYLESHEETS -->
+		<!-- BOOTSTRAP CSS -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/bootstrap.min.css'%}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/bootstrap-theme.min.css'%}">
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/font-awesome/css/font-awesome.min.css'%}" />		
+		<!-- MAGNIFIC LIGHT BOX -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/magnific/magnific-popup.css'%}">
+		<!-- CAROUSEL STYLE LINK -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/owl-carousel/owl.carousel.css'%}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/owl-carousel/owl.theme.css'%}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/vendor/owl-carousel/carousel.css'%}">
+		<!-- CUSTOM CSS -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/custom/style.css'%}">
+</head>
+<body>
+	<!--================================= NAVIGATION START ==========================================-->
+  <header>
+    <nav class="topbar navbar navbar-default navbar-fixed-top clearfix" id="top-nav">
+      <div class="container">
+        <div class="logo-image">
+          <a href="#"><img src="{% static 'images/logo150x50'%}" alt="chuluun-advocates-logo" /></a>
+        </div>
+        <div class="navbar-right nav">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>					
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" >
+              <ul class="nav navbar-nav" id="menu_1" >
+                <li class="menu">
+                  <a href="#home" class="pagescroll">
+                  HOME
+                  </a>
+                </li>
+                <li class="menu">
+                  <a href="#services" class="pagescroll">
+                  SERVICES
+                  </a>
+                </li>
+                {% comment %} <li class="menu">
+                  <a href="#testimonial" class="pagescroll">
+                  TESTIMONIAL
+                  </a>
+                </li> {% endcomment %}
+                <li class="menu">
+                  <a href="#news" class="pagescroll">
+                  NEWS
+                  </a>
+                </li>
+                <li class="menu">
+                  <a href="#contact" class="pagescroll">
+                  CONTACT
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </header>
+	{% block content %}
+	{% endblock %}
+	<footer class="copyright-bg">
+    <div class="container copyright text-center">
+      <p>Chuluun-Advocates 2020 &copy; All Rights Reserved</p>
+    </div>
+  </footer>
+	<!--================================= COPYRIGHT-1 END ==========================================-->
+  <!-- JQUERY LIBRARY -->
+  <script type="text/javascript" src="{% static 'js/vendor/jquery.min.js'%}"></script>	
+  <!-- BOOTSTRAP -->
+  <script type="text/javascript" src="{% static 'js/vendor/bootstrap.min.js'%}"></script>	
+  <!-- SLIDER JS FILES -->
+  <script type="text/javascript" src="{% static 'js/vendor/slider/owl.carousel.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/vendor/slider/owl-slider.js'%}"></script>	
+  <!-- COUNTER JS FILES -->
+  <script type="text/javascript" src="{% static 'js/vendor/counter/counter-lib.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/vendor/counter/jquery.counterup.min.js'%}"></script>		
+  <!-- MAGNIFIC LIGHT BOX -->
+  <script type="text/javascript" src="{% static 'js/vendor/magnific/jquery.magnific-popup.js'%}"></script>
+  <!-- SUBSCRIBE MAILCHIMP -->
+  <script type="text/javascript" src="{% static 'js/vendor/subscribe/subscribe_validate.js'%}"></script>			
+  <!-- FORM VALIDATION -->
+  <script type="text/javascript" src="{% static 'js/vendor/validate/jquery.validate.min.js'%}"></script>		
+  <!-- SHUFFLE JS FILES -->
+  <script type="text/javascript" src="{% static 'js/vendor/shuffle/modernizr.custom.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/vendor/shuffle/jquery.shuffle.js'%}"></script>
+
+  <script type="text/javascript" src="{% static 'js/vendor/shuffle/page.js' %}"></script>
+
+  <script type="text/javascript" src="{% static 'js/vendor/shuffle/evenheights.js' %}"></script>
+
+  <script type="text/javascript" src="{% static 'js/vendor/shuffle/homepage.js' %}"></script>
+
+  <!-- NUMBER VALIDATION JS FILES -->
+  <script type="text/javascript" src="{% static 'js/vendor/number.js' %}"></script>		
+  <!-- THEME JS -->
+  <script type="text/javascript" src="{% static 'js/custom/custom.js' %}"></script>	
+</body>
+
+</html>
