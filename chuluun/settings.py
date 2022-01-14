@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'storages',
     'home.apps.HomeConfig',
+    'rest_framework',
+    'render_as_template'
 ]
 
 MIDDLEWARE = [
@@ -77,16 +78,12 @@ WSGI_APPLICATION = 'chuluun.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ['RDS_CHULUUN_DB_NAME'],
-        'USER': os.environ['RDS_CHULUUN_DB_USERNAME'],
-        'PASSWORD': os.environ['RDS_CHULUUN_DB_PASSWORD'],
-        'HOST': os.environ['RDS_CHULUUN_DB_HOSTNAME'],
-        'PORT': os.environ['RDS_CHULUUN_DB_PORT'],
-        'OPTIONS':{
-            'charset': 'utf8',
-            'use_unicode': True
-        },
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'chuluun_db',
+        'USER': 'postgres',
+        'PASSWORD': 'deraltewurfeltnicht1028',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -113,7 +110,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'mn'
 
 TIME_ZONE = 'Asia/Ulaanbaatar'
 
@@ -123,6 +119,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
