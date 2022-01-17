@@ -2,20 +2,21 @@
 {% load static %}
 {% block content %}
 {% load render_as_template %}
+
 <body>
 
   {% render_as_template list|safe %}
 
   <!--================================= NAVIGATION START ==========================================-->
-  <!--================================= NAVIGATION END ==========================================-->		
-	<!--=================================  HEADER-1 START ==========================================-->		
+  <!--================================= NAVIGATION END ==========================================-->
+  <!--=================================  HEADER-1 START ==========================================-->
   <!--================================= SERVICE-1 START ==========================================-->
   <!--================================= SERVICE-1 ENDS ==========================================-->
-  <!--================================= THREE COLUMN START ==========================================-->		
+  <!--================================= THREE COLUMN START ==========================================-->
   <!--================================= THREE COLUMN ENDS ==========================================-->
   <!--================================= COUNTER START ==========================================-->
   <!--================================= COUNTER ENDS ==========================================-->
-  <!--================================= FEATURES-1 START ==========================================-->		
+  <!--================================= FEATURES-1 START ==========================================-->
   <!-- {% comment %} <section class="section-padding section-1-bg">
     <div class="container">
       <div class="heading-div-1 text-center">
@@ -78,7 +79,7 @@
     </div>
   </section> {% endcomment %}
   <!--================================= FEATURES-1 ENDS ==========================================-->
-  
+
   <!--================================= TWO COLUMN LEFT AND RIGHT START ==========================================-->
   <!-- {% comment %} <section class="section-2-bg two-left-right-bg">
     <div class="container-fluid">
@@ -127,11 +128,11 @@
     </div>
   </section> {% endcomment %} -->
   <!--================================= TWO COLUMN LEFT AND RIGHT ENDS ==========================================-->
-  
-  
+
+
   <!--================================= GALLERY START ==============================================-->
   <!-- {% comment %} <div class="gallery-padding section-1-bg gallery-section" id="gallery"> -->
-    <!-- <div class="container-fluid">
+  <!-- <div class="container-fluid">
       <div class="heading-div-1 text-center">
         <h2>Our Awesome Gallery</h2>
         <div class="underline"></div>
@@ -247,12 +248,12 @@
     </div>
   </div> {% endcomment %} -->
   <!--================================= GALLERY ENDS ==========================================-->
-  
-  <!--================================= TEAM START ==========================================-->		
 
-  <!--================================= TEAM ENDS ==========================================-->			
-  
-  <!--=================================  TESTIMONIAL START ==========================================-->		
+  <!--================================= TEAM START ==========================================-->
+
+  <!--================================= TEAM ENDS ==========================================-->
+
+  <!--=================================  TESTIMONIAL START ==========================================-->
   <!-- {% comment %} <section class="section-padding testimonial-bg bgimage-property" id="testimonial">
     <div class="container">
       <div class="col-sm-12 text-center">
@@ -374,8 +375,8 @@
     </div>
   </section> {% endcomment %} -->
   <!--================================= TESTIMONIAL ENDS ============================================-->
-  
-  <!--================================= PRICE TABLE-1 START ==========================================-->		
+
+  <!--================================= PRICE TABLE-1 START ==========================================-->
   <!-- {% comment %} <section class="section-padding section-1-bg" id="pricing">
     <div class="container">
       <div class="heading-div-1 text-center">
@@ -492,8 +493,8 @@
     </div>
   </section> {% endcomment %} -->
   <!--================================= PRICE TABLE-1 ENDS ==========================================-->
-  
-  <!--=================================  CTA START ==========================================-->		
+
+  <!--=================================  CTA START ==========================================-->
   <!-- {% comment %} <section class="cta-bg bgimage-property">
     <div class="container">
       <div class="col-sm-12 text-center">
@@ -508,14 +509,14 @@
       </div>
     </div>
   </section> {% endcomment %} -->
-  <!--================================= CTA ENDS ============================================-->		
-  
-  <!--================================= NEWS START ==========================================-->		
-  
-  <!--================================= NEWS ENDS ==========================================-->	
-  
+  <!--================================= CTA ENDS ============================================-->
+
+  <!--================================= NEWS START ==========================================-->
+
+  <!--================================= NEWS ENDS ==========================================-->
+
   <!--================================= SPONSORS-2 START ==========================================-->
-  
+
   <!--================================= SPONSORS-2 ENDS ==========================================-->
 
   <!--================================= HEADER STRIP START ==========================================-->
@@ -537,122 +538,16 @@
     </div>
   </div> {% endcomment %} -->
   <!--================================= HEADER STRIP END ==========================================-->
-  
-  
-  <!--================================= FORM SECTION START ==========================================-->		
-  <div class="section-padding section-2-bg" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 contact-img" id="canvas1">
-          <iframe id="map_canvas1" class="contact-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988853.8283661404!2d-109.79819478383385!3d42.98243242389649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875ee23448e12e69%3A0x26b02279d27d382f!2sWyoming%2C+USA!5e0!3m2!1sen!2sin!4v1444977908624" allowfullscreen></iframe>
-        </div>					
-        <div class="col-sm-6 ">
-          <div class="form-col-1 no-padding">
-            <form class="contact-form-1" action="/form" method="post">
-              <div class="form-div-1">
-                
-                <input class="form-input" type="text" name="name" value="" placeholder="Please Enter Name" required autocomplete="off">
-              </div>
-              <div class="form-div-1">
-                
-                <input class="form-input" type="email" name="email"  value="" placeholder="Please Enter Email" required autocomplete="off">
-              </div>
-              <div class="form-div-1">
-                
-                <input class="form-input" type="text" name="phone"  value="" placeholder="Please Enter Phone" required autocomplete="off" onkeypress="return isNumber(event)" maxlength="10">
-              </div>
-              <div class="form-div-1">
-                
-                <textarea class="form-message" name="message" cols="40" rows="3" placeholder="Please Enter Message" required autocomplete="off"></textarea>
-              </div>
-              <div class="button form-btn text-left">	
-                <button type="submit" class="btn btn-1 submit">Submit</button>
-              </div>
-              <div class="messageDiv"> <span class="sucessMessage"> </span> <span class="failMessage"> </span> </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+  <!--================================= FORM SECTION START ==========================================-->
+
   <!--================================= FORM SECTION ENDS ==========================================-->
-  
-  <!--================================= FOOTER-1 START ==========================================-->	
-  <div class="footer-section section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 footer-col">
-          <div class="footer-logo">
-            <a href="#"><img src="{% static 'images/250logo.png'%}" alt="250x80" class="img-responsive"/></a>
-          </div>
-          <h4>About Us</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae semper nulla. Nunc tempus consequat blandit. Sed nec risus sapien.
-            </p>
-        </div>
-        <div class="col-sm-4 footer-col-1">
-        
-        <div id="mc_embed_signup" class="subscribe-form">
-            <h4>Subscribe Here</h4>
-            <form  action="http://evethemes.us11.list-manage.com/subscribe/post?u=a795532c55a578843e04b09c0&amp;id=fa362f029a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form7 clearfix"  novalidate>
-                          
-                <input class="subscribe-input" type="email" name="EMAIL"  value="" id="mce-EMAIL" placeholder="Please Enter Email">
-                <div class="subscribe-btn">
-                <button class="btn btn-1" id="mc-embedded-subscribe" type="submit">
-                 Subscribe
-                </button>
-                </div>
-            
-              <div id="mce-responses">
-                <div class="response response-msg" id="mce-error-response"></div>
-                <div class="response response-msg" id="mce-success-response"></div>
-              </div>
-            </form>
-            <div id="ResultMsg" class="message">
-              <p class="SuccessMsg"></p>
-              <p class="FailureMsg"></p>
-            </div>
-          </div>
-        
-        </div>
-        <div class="col-sm-4">
-        <div class="contact-div">
-              <ul class="content-ul contact-address contact-address-space">
-                <li><img src="{% static 'images/email.png'%}" alt="email"/></li>
-                <li>
-                  <p><a href="#">office@chuluun-advocates.mn</a> </p>
-                </li>
-              </ul>
-              <ul class="content-ul contact-address contact-address-space">
-                <li><img src="{% static 'images/location.png'%}" alt="location"/></li>
-                <li>
-                  <p>402, Monre Insurance Building, Baga Toiruu 24-1, SB district, Ulaanbaatar, Mongolia </p>
-                </li>
-              </ul>
-              <ul class="content-ul contact-address contact-address-space">
-                <li><img src="{% static 'images/website.png'%}" alt="webiste"/></li>
-                <li>
-                  <p><a href="#">www.chuluun-advocates.cmn</a> </p>
-                </li>
-              </ul>
-              <ul class="content-ul contact-address">
-                <li><img src="{% static 'images/phone_number.png'%}" alt="32x32x8"/></li>
-                <li>
-                  <p> 11-320244</p>
-                </li>
-              </ul>
-            </div>
-        <ul class="content-ul footer1-icon">
-        
-          <li><a href="#"><img src="{% static 'images/40x40x1.png'%}" alt="40x40x1" /></a></li>
-          <li><a href="#"><img src="{% static 'images/40x40x2.png'%}" alt="40x40x2" /></a></li>
-          <li><a href="#"><img src="{% static 'images/40x40x3.png'%}" alt="40x40x3" /></a></li>
-        </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <!--================================= FOOTER-1 START ==========================================-->
+
   <!--================================= FOOTER-1 END ==========================================-->
-  
+
   <!--================================= COPYRIGHT-1 START ==========================================-->
   <footer class="copyright-bg">
     <div class="container copyright text-center">
@@ -661,21 +556,21 @@
   </footer>
   <!--================================= COPYRIGHT-1 END ==========================================-->
   <!-- JQUERY LIBRARY -->
-  <script type="text/javascript" src="{% static 'js/vendor/jquery.min.js'%}"></script>	
+  <script type="text/javascript" src="{% static 'js/vendor/jquery.min.js'%}"></script>
   <!-- BOOTSTRAP -->
-  <script type="text/javascript" src="{% static 'js/vendor/bootstrap.min.js'%}"></script>	
+  <script type="text/javascript" src="{% static 'js/vendor/bootstrap.min.js'%}"></script>
   <!-- SLIDER JS FILES -->
   <script type="text/javascript" src="{% static 'js/vendor/slider/owl.carousel.min.js'%}"></script>
-  <script type="text/javascript" src="{% static 'js/vendor/slider/owl-slider.js'%}"></script>	
+  <script type="text/javascript" src="{% static 'js/vendor/slider/owl-slider.js'%}"></script>
   <!-- COUNTER JS FILES -->
   <script type="text/javascript" src="{% static 'js/vendor/counter/counter-lib.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/vendor/counter/jquery.counterup.min.js'%}"></script>		
+  <script type="text/javascript" src="{% static 'js/vendor/counter/jquery.counterup.min.js'%}"></script>
   <!-- MAGNIFIC LIGHT BOX -->
   <script type="text/javascript" src="{% static 'js/vendor/magnific/jquery.magnific-popup.js'%}"></script>
   <!-- SUBSCRIBE MAILCHIMP -->
-  <script type="text/javascript" src="{% static 'js/vendor/subscribe/subscribe_validate.js'%}"></script>			
+  <script type="text/javascript" src="{% static 'js/vendor/subscribe/subscribe_validate.js'%}"></script>
   <!-- FORM VALIDATION -->
-  <script type="text/javascript" src="{% static 'js/vendor/validate/jquery.validate.min.js'%}"></script>		
+  <script type="text/javascript" src="{% static 'js/vendor/validate/jquery.validate.min.js'%}"></script>
   <!-- SHUFFLE JS FILES -->
   <script type="text/javascript" src="{% static 'js/vendor/shuffle/modernizr.custom.min.js'%}"></script>
   <script type="text/javascript" src="{% static 'js/vendor/shuffle/jquery.shuffle.js'%}"></script>
@@ -687,9 +582,8 @@
   <script type="text/javascript" src="{% static 'js/vendor/shuffle/homepage.js' %}"></script>
 
   <!-- NUMBER VALIDATION JS FILES -->
-  <script type="text/javascript" src="{% static 'js/vendor/number.js' %}"></script>		
+  <script type="text/javascript" src="{% static 'js/vendor/number.js' %}"></script>
   <!-- THEME JS -->
-  <script type="text/javascript" src="{% static 'js/custom/custom.js' %}"></script>	
+  <script type="text/javascript" src="{% static 'js/custom/custom.js' %}"></script>
 </body>
 {% endblock %}
-

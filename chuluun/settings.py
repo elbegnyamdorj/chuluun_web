@@ -25,7 +25,7 @@ SECRET_KEY = 'c*y_@%t0=n=6sd773==*1@1k(mhe(-sv7&_4%56%=*4ooad!@9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'chuluun-advocates-single.ap-southeast-1.elasticbeanstalk.com', 'chuluun-advocates.mn', 'test.chuluu-advocates.mn']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'chuluun-advocates-single.ap-southeast-1.elasticbeanstalk.com', 'chuluun-advocates.mn', 'test.chuluu-advocates.mn', '103.50.205.31']
 
 
 # Application definition
