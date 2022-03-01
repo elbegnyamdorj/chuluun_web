@@ -1,0 +1,260 @@
+{% extends 'base.html'%} {% load static %} {% block content %} 
+{% load render_as_template %}
+
+<body>
+  {% render_as_template list|safe %}
+  <header>
+    <nav
+      class="topbar navbar navbar-default navbar-fixed-top clearfix"
+      id="top-nav1"
+      style="display: block !important"
+    >
+      <div class="container">
+        <div class="logo-image">
+          <a href="#"
+            ><img
+              src="{% static 'images/logo150x50.png'%}"
+              alt="chuluun-advocates-logo"
+          /></a>
+        </div>
+        <div class="navbar-right nav">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav" id="menu_1">
+                <li class="menu">
+                  <a href="#home" class="pagescroll"> HOME </a>
+                </li>
+                <li class="menu">
+                  <a href="#services" class="pagescroll"> SERVICES </a>
+                </li>
+
+                <li class="menu">
+                  <a href="#news" class="pagescroll"> NEWS </a>
+                </li>
+                <li class="menu">
+                  <a href="#contact" class="pagescroll"> CONTACT </a>
+                </li>
+                <li class="menu">
+                  <div class="dropdown btn-group">
+                    <a
+                      class="btn btn-secondary dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#"
+                      style="padding: 20px 5px; color: #333333 !important"
+                    >
+                      EN<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://103.50.205.31/en/">EN</a></li>
+                      <li><a href="http://103.50.205.31/mn/">MN</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </header>
+  <div class="footer-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 footer-col">
+                <div class="footer-logo">
+                    {% comment %}
+                    <a href="#"><img src="{% static 'images/250logo.png'%}" alt="250x80"
+                            class="img-responsive" /></a>{% endcomment %}
+                </div>
+                <h4 style="color:#a61223 ;">About Us</h4>
+                <p>
+                    Founded in 2004 as Shine Erin LLP, our law firm recently changed our
+                    name to the CHULUUN ADVOCATES LLP. Legal issues are getting more
+                    complex in a developing Mongolian market where our clients require
+                    legal advice daily. We do take our time to provide tailor-made
+                    solutions to our clients. We have built our reputation in providing
+                    efficient legal services and our expertise to companies ranging from
+                    small to large, as well as to individuals. We concentrate closely on a
+                    success and satisfaction of our clients.
+                </p>
+            </div>
+            {% comment %}
+            <div class="col-sm-4 footer-col-1">
+                <div id="mc_embed_signup" class="subscribe-form">
+                    <h4>Subscribe Here</h4>
+                    <form
+                        action="http://evethemes.us11.list-manage.com/subscribe/post?u=a795532c55a578843e04b09c0&amp;id=fa362f029a"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                        class="validate form7 clearfix" novalidate>
+                        <input class="subscribe-input" type="email" name="EMAIL" value="" id="mce-EMAIL"
+                            placeholder="Please Enter Email" />
+                        <div class="subscribe-btn">
+                            <button class="btn btn-1" id="mc-embedded-subscribe" type="submit">
+                                Subscribe
+                            </button>
+                        </div>
+
+                        <div id="mce-responses">
+                            <div class="response response-msg" id="mce-error-response"></div>
+                            <div class="response response-msg" id="mce-success-response"></div>
+                        </div>
+                    </form>
+                    <div id="ResultMsg" class="message">
+                        <p class="SuccessMsg"></p>
+                        <p class="FailureMsg"></p>
+                    </div>
+                </div>
+            </div>
+            {% endcomment %}
+            <div class="col-sm-6">
+                <div class="contact-div">
+                    <ul class="content-ul contact-address contact-address-space">
+                        <li><img src="{% static 'images/email.png'%}" alt="email" /></li>
+                        <li>
+                            <p><a href="#">office@chuluun-advocates.mn</a></p>
+                        </li>
+                    </ul>
+                    <ul class="content-ul contact-address contact-address-space">
+                        <li>
+                            <img src="{% static 'images/location.png'%}" alt="location" />
+                        </li>
+                        <li>
+                            <p>
+                                403, Monre Insurance Building, Baga Toiruu 24-1, SB district,
+                                Ulaanbaatar, Mongolia
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="content-ul contact-address contact-address-space">
+                        <li>
+                            <img src="{% static 'images/website.png'%}" alt="webiste" />
+                        </li>
+                        <li>
+                            <p><a href="https://www.chuluun-advocates.mn">www.chuluun-advocates.mn</a></p>
+                        </li>
+                    </ul>
+                    <ul class="content-ul contact-address">
+                        <li>
+                            <img src="{% static 'images/phone_number.png'%}" alt="32x32x8" />
+                        </li>
+                        <li>
+                            <p>+976 11-320244</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="content-ul footer1-icon">
+                    <li>
+                        <a href="#"><img src="{% static 'images/40x40x1.png'%}" alt="40x40x1" /></a>
+                    </li>
+                    <li>
+                        <p><a href="https://www.facebook.com/ChuluunAdvocatesLLP/ ">Chuluun Advocates LLP</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  <footer class="copyright-bg">
+    <div class="container copyright text-center">
+      <p>Chuluun-Advocates 2020 &copy; All Rights Reserved</p>
+    </div>
+  </footer>
+  <!--================================= COPYRIGHT-1 END ==========================================-->
+  <!-- JQUERY LIBRARY -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/jquery.min.js'%}"
+  ></script>
+  <!-- BOOTSTRAP -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/bootstrap.min.js'%}"
+  ></script>
+  <!-- SLIDER JS FILES -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/slider/owl.carousel.min.js'%}"
+  ></script>
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/slider/owl-slider.js'%}"
+  ></script>
+  <!-- COUNTER JS FILES -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/counter/counter-lib.js' %}"
+  ></script>
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/counter/jquery.counterup.min.js'%}"
+  ></script>
+  <!-- MAGNIFIC LIGHT BOX -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/magnific/jquery.magnific-popup.js'%}"
+  ></script>
+  <!-- SUBSCRIBE MAILCHIMP -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/subscribe/subscribe_validate.js'%}"
+  ></script>
+  <!-- FORM VALIDATION -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/validate/jquery.validate.min.js'%}"
+  ></script>
+  <!-- SHUFFLE JS FILES -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/shuffle/modernizr.custom.min.js'%}"
+  ></script>
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/shuffle/jquery.shuffle.js'%}"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/shuffle/page.js' %}"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/shuffle/evenheights.js' %}"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/shuffle/homepage.js' %}"
+  ></script>
+
+  <!-- NUMBER VALIDATION JS FILES -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/vendor/number.js' %}"
+  ></script>
+  <!-- THEME JS -->
+  <script
+    type="text/javascript"
+    src="{% static 'js/custom/custom.js' %}"
+  ></script>
+</body>
+{% endblock %}

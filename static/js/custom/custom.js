@@ -6,11 +6,11 @@
 	Primary Use :   STARTUP TEMPLATES
 
 =================================================================================================================================*/
-$(document).on('ready', function() {
+$(document).on('ready', function () {
     "use strict"; //Start of Use Strict
     var menu_bar = $('.navbar-default');
     var menu_li = $('.navbar-nav li a');
-    var collapse = $('.navbar-collapse');   
+    var collapse = $('.navbar-collapse');
     var top_nav = $('#top-nav');
     var top_menu = $('.header-menu-1');
 
@@ -24,7 +24,7 @@ $(document).on('ready', function() {
         } else {
             top_nav.fadeOut();
         }
-        $(document).on('scroll', function() {
+        $(document).on('scroll', function () {
             var y = $(this).scrollTop();
             if (y > 50) {
                 top_nav.fadeIn();
@@ -36,10 +36,10 @@ $(document).on('ready', function() {
 
     //RESPONSIVE MENU SHOW AND HIDE FUNCTION
     if (menu_li.length) {
-        menu_li.on("click", function(event) {
+        menu_li.on("click", function (event) {
             collapse.slideToggle();
         });
-        $('.navbar-default .navbar-toggle').on("click", function(e) {
+        $('.navbar-default .navbar-toggle').on("click", function (e) {
             collapse.slideToggle();
         });
     }
@@ -47,7 +47,7 @@ $(document).on('ready', function() {
     //MENU BAR SMOOTH SCROLLING FUNCTION
     var menu_list = $('.navbar-nav');
     if (menu_list.length) {
-        menu_list.on("click", ".pagescroll", function(event) {
+        menu_list.on("click", ".pagescroll", function (event) {
             event.stopPropagation();
             event.preventDefault();
             var hash_tag = $(this).attr('href');
@@ -84,24 +84,32 @@ $(document).on('ready', function() {
             },
             image: {
                 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-                titleSrc: function(item) {
+                titleSrc: function (item) {
                     return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
                 }
             }
         });
-    }   
+    }
 
+    function onFormSubmit() {
+        alert('sda')
+    }
     //CONTACT FORM VALIDATION	
     if ($('.contact-form-1').length) {
-        $('.contact-form-1').each(function() {
+        $('.contact-form-1').each(function () {
             $(this).validate({
                 errorClass: 'error',
-                submitHandler: function(form) {
+                submitHandler: function (form) {
+                    var data = $(form).serializeArray().reduce(function (obj, item) {
+                        obj[item.name] = item.value;
+                        return obj;
+                    }, {});
+                    console.log(data)
                     $.ajax({
                         type: "POST",
-                        url: "mail/mail.php",
+                        url: "/mail/",
                         data: $(form).serialize(),
-                        success: function(data) {
+                        success: function (data) {
                             if (data) {
                                 $('.sucessMessage').html('Mail Sent Successfully !');
                                 $('.sucessMessage').show();
@@ -112,7 +120,7 @@ $(document).on('ready', function() {
                                 $('.failMessage').delay(3000).fadeOut();
                             }
                         },
-                        error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
                             $('.failMessage').html(textStatus);
                             $('.failMessage').show();
                             $('.failMessage').delay(3000).fadeOut();

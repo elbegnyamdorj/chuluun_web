@@ -1,0 +1,35 @@
+<section class="section-padding section-1-bg" id="news">
+  <div class="container">
+    <div class="heading-div-1 text-center">
+      <h2>News</h2>
+      <div class="underline" style="background-color: #a61223"></div>
+    </div>
+    {% for news in news_list %}
+    <div class="row news-row-2">
+      <div class="col-sm-12 col-sm-pull-0">
+        <div class="news-col">
+          <ul class="content-ul news-ul">
+            <li>
+              <a href="#"
+                ><img src="{% static 'images/24x24x1.png'%}" alt="24x24x1"
+              /></a>
+            </li>
+            <li>
+              <p><a href="#">{{news.date}}</a></p>
+            </li>
+          </ul>
+          <h4><a href="#">{{news.title}}</a></h4>
+
+          <p>{{news.body}}</p>
+          <div class="content-top-space">
+            <a href="#" class="readmore1" style="color: #a61223"
+              >Read More
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
